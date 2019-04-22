@@ -36,7 +36,7 @@ void addOneProcess(int id) {
 	sprintf(EventID, " %d", id);
 	procInfo.push_back(createNewProcess(EventID));
 
-	sprintf(EventID, " %dñ", id);
+	sprintf(EventID, " %dÃ±", id);
 	closeEventInfo.push_back(CreateEvent(NULL, FALSE, FALSE, EventID));
 
 	sprintf(EventID, " %dp", id);
