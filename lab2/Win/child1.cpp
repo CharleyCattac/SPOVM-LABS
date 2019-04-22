@@ -14,7 +14,7 @@ PROCESS_INFORMATION pi;
 int main(int argc, char* argv[]) {
 
 	char EventID[10];
-	sprintf(EventID, " %dñ", atoi(argv[1]));
+	sprintf(EventID, " %dÃ±", atoi(argv[1]));
 	HANDLE close = OpenEvent(EVENT_ALL_ACCESS, FALSE, EventID);
 	sprintf(EventID, " %dp", atoi(argv[1]));
 	HANDLE print = OpenEvent(EVENT_ALL_ACCESS, FALSE, EventID);
