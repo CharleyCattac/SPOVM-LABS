@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
 
 	char procID[10];
 
-	sprintf(procID, " %dñ", atoi(argv[1]));
+	sprintf(procID, " %dÃ±", atoi(argv[1]));
 	HANDLE close = OpenSemaphore(SEMAPHORE_ALL_ACCESS, FALSE, procID);
 
 	sprintf(procID, " %df", atoi(argv[1]));
