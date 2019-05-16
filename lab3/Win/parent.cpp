@@ -36,7 +36,7 @@ void addOneProcess(int id) {
 	sprintf(procID, " %d", id);
 	processes.push_back(createNewProcess(procID));
 
-	sprintf(procID, " %dñ", id);
+	sprintf(procID, " %dÃ±", id);
 	closeSemas.push_back(CreateSemaphore(NULL, 0, 1, procID));
 	sprintf(procID, " %df", id);
 	filemapSemas.push_back(CreateSemaphore(NULL, 0, 1, procID));
