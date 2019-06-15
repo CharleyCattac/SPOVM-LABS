@@ -27,7 +27,7 @@ DWORD WINAPI ClientThreadRoutine(void* arg) {
 	char procID[10];
 	int id = threads.size();
 
-	sprintf(procID, " %dñ", id);
+	sprintf(procID, " %dÃ±", id);
 	HANDLE close = OpenMutex(SYNCHRONIZE, FALSE, procID);
 
 	sprintf(procID, " %df", id);
@@ -90,7 +90,7 @@ HANDLE createNewThread()
 void addOneThread() {
 	threads.push_back(createNewThread());
 
-	sprintf(procID, " %dñ", threads.size());
+	sprintf(procID, " %dÃ±", threads.size());
 	closeMux.push_back(CreateMutex(NULL, TRUE, procID));
 
 	sprintf(procID, " %df", threads.size());
