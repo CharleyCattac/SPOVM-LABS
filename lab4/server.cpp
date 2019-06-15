@@ -52,7 +52,6 @@ DWORD WINAPI ClientThreadRoutine(void* arg) {
 	{
 		if (WaitForSingleObject(fileMap, 1) == WAIT_OBJECT_0)
 		{
-			//cout << "WR" << id;
 			CopyMemory((PVOID)buff, empty, sizeof(empty));
 			CopyMemory((PVOID)buff, uniStr, strlen(uniStr));
 			ReleaseMutex(fileMap);
@@ -60,7 +59,6 @@ DWORD WINAPI ClientThreadRoutine(void* arg) {
 		}
 		if (WaitForSingleObject(close, 1) == WAIT_OBJECT_0)
 		{
-			//cout << "CL" << id;
 			CloseHandle(close);
 			CloseHandle(fileMap);
 			CloseHandle(memSection);
